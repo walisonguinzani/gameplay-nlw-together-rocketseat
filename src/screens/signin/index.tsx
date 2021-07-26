@@ -1,32 +1,47 @@
-import React, { useState } from 'react';
-import { 
+import React from 'react';
+import {
   View,
   Text,
   Image,
- } from 'react-native';
+  StatusBar
+} from 'react-native';
+
+import { ButtonIcon } from '../../components/buttonicon';
 import IlustrationImg from '../../assets/illustration.png';
 import { styles } from './style';
 
 export function Signin() {
-  const [text, setText] = useState('');
+
 
   return (
     <View style={styles.container}>
-      <Image 
-        source={IlustrationImg} 
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="transparent"
+        translucent
+      />
+
+      <Image
+        source={IlustrationImg}
         style={styles.image}
         resizeMode="stretch"
       />
+
       <View style={styles.content}>
+
         <Text style={styles.title}>
-            Orgaize {`\n`}
-            suas jogatinas{`\n`}
-            facilmente
+          Orgaize {`\n`}
+          suas jogatinas{`\n`}
+          facilmente
         </Text>
+
         <Text style={styles.subtitle}>
           Crie grupos para jogar seus games {`\n`}
           favoritos com seus amigos
         </Text>
+
+        <ButtonIcon />
+
       </View>
     </View>
   );
