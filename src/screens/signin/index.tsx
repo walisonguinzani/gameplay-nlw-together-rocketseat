@@ -18,7 +18,7 @@ export function Signin() {
       <StatusBar
         barStyle="light-content"
         backgroundColor="transparent"
-        translucent
+        translucent = {true}
       />
 
       <Image
@@ -30,7 +30,7 @@ export function Signin() {
       <View style={styles.content}>
 
         <Text style={styles.title}>
-          Orgaize {`\n`}
+          Organize {`\n`}
           suas jogatinas{`\n`}
           facilmente
         </Text>
@@ -40,7 +40,10 @@ export function Signin() {
           favoritos com seus amigos
         </Text>
 
-        <ButtonIcon />
+        <ButtonIcon 
+          title="Entrar com Discord"
+          activeOpacity ={0.7}
+        />
 
       </View>
     </View>

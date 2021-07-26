@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
         width: 56,
         height: 56,
         justifyContent: 'center',
-        AlignItems: 'center',
+        alignItems: 'center',
         borderRightWidth: 1,
         borderColor: theme.colors.line
     },
@@ -26,6 +26,6 @@ export const styles = StyleSheet.create({
         flex: 1,
         color: theme.colors.heading,
         fontSize: 15,
-        TextAlign: 'center'
+        textAlign: 'center'
     },
 });
