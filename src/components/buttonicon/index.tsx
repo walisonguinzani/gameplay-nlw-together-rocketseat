@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 
 import DiscordImg from '../../assets/discord.png';
-import { styles } from './styles';
+import { styles } from './style';
 
 export function ButtonIcon() {
     return (
