@@ -6,7 +6,7 @@ import AppLoading from 'expo-app-loading';
 import { StatusBar } from 'react-native';
 
 import { View, Text, TextInput } from 'react-native';
-import { Signin } from './src/screens/signin';
+import { Home } from './src/screens/home';
 
 import { Background } from './src/components/background';
 
@@ -29,7 +29,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent = {true}
       />
-      <Signin />
+      <Home />
     </Background>
   );
 }
